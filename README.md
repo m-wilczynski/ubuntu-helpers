@@ -1,5 +1,5 @@
 # ubuntu-helpers
-Helper scripts for dev environment on Ubuntu.
+Helper scripts for dev environment on Ubuntu 14.04.
 
 Usage:
 ```
