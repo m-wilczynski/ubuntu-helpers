@@ -16,5 +16,5 @@ sudo npm install -g yo
 sudo npm install -g generator-aspnet
 
 # VS Code
-wget -O ~/Downloads "https://go.microsoft.com/fwlink/?LinkID=760868"
-sudo dpkg -i vscode-amd64.deb
+wget -O ~/Downloads/vscode-amd64.deb "https://go.microsoft.com/fwlink/?LinkID=760868"
+sudo dpkg -i ~/Downloads/vscode-amd64.deb
