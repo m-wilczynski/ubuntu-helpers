@@ -1,6 +1,11 @@
 # ubuntu-helpers
 Helper scripts for dev environment on Ubuntu.
 
+Usage:
+```
+sudo sh dotnet-install.sh
+```
+
 ### Currently available:
 
 #### dotnet-install.sh
