@@ -5,12 +5,12 @@ lts14="14.04"
 lts16="16.04"
 
 # .NET Core
-if [ "$version" = "$lts14" ]
-then
+if [ "$version" = "$lts14" ]; then
     sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet/ trusty main" > /etc/apt/sources.list.d/dotnetdev.list'
-elif [ "$version" = "$lts16" ]
-then
+elif [ "$version" = "$lts16" ]; then
     sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list'
+else
+    echo "Not a supported LTS version"
 fi
 
 sudo apt-key adv --keyserver apt-mo.trafficmanager.net --recv-keys 417A0893
