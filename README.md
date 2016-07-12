@@ -8,7 +8,7 @@ sudo sh install-dotnet.sh
 
 ### Currently available:
 
-#### dotnet-install.sh
+#### install-dotnet.sh
 *Installs .NET Core 1.0.0 and helpers: Yeoman scaffolder and Visual Studio Code editor*
 
 - .NET Core (1.0.0)
