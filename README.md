@@ -3,7 +3,7 @@ Helper scripts for dev environment on Ubuntu 14.04 and 16.04 LTS.
 
 Usage:
 ```
-sudo sh dotnet-install.sh
+sudo sh install-dotnet.sh
 ```
 
 ### Currently available:
