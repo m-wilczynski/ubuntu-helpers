@@ -29,8 +29,10 @@ sudo gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A17031138
 # RVM for managing Ruby -v
 curl -sSL https://get.rvm.io | bash -s stable
 
+# RVM for single-user shell
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"' >> ~/.bash_profile
+
 # Ruby 2.0.0
-/bin/bash --login
 rvm install 2.1.0
 rvm use 2.1.0
 rvm rubygems latest
