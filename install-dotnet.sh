@@ -17,8 +17,11 @@ done
 sudo apt-get -y update
 
 # Curl install/update
-sudo apt-get -y install curl
 sudo apt-get -y install libcurl3
+sudo apt-get -y install curl
+
+# ZLib and other essentials
+sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev
 
 # Git
 sudo apt-get -y install git

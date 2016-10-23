@@ -14,19 +14,19 @@ done
 sudo apt-get -y update
 
 # Curl install/update
-sudo apt-get -y install curl
 sudo apt-get -y install libcurl3
-
-# Git
-sudo apt-get -y install git
+sudo apt-get -y install curl
 
 # ZLib and other essentials
 sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev
 
+# Git
+sudo apt-get -y install git
+
 # Get public key for RVM
 sudo gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 
-# RVM for managing Ruby -v
+# RVM for managing Ruby
 curl -sSL https://get.rvm.io | bash -s stable
 
 # Source RVM in this script
