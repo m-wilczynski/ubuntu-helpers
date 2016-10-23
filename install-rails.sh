@@ -23,7 +23,7 @@ sudo gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A17031138
 curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 # Register loading RVM in bash shell
-echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~./bashrc
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
 source ~/.bashrc 
 
 # Get stable RVM
