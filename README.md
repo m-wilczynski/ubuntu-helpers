@@ -17,7 +17,7 @@ sudo sh install-dotnet.sh -c
  
 <br/>
 ![.NET Core](https://s21.postimg.org/v24w7y087/dotnet.png ".NET Core")
-### install-dotnet.sh
+### [install-dotnet.sh](https://github.com/m-wilczynski/ubuntu-helpers/blob/master/install-dotnet.sh)
 *Installs .NET Core 1.0.0 and helpers: Yeoman scaffolder and Visual Studio Code editor*
 
 - .NET Core (1.0.0)
@@ -29,7 +29,7 @@ sudo sh install-dotnet.sh -c
 
 <br/>
 ![Ruby On Rails](https://s21.postimg.org/oppqy3x5z/rails.png "Ruby On Rails")
-### install-rails.sh
+### [install-rails.sh](https://github.com/m-wilczynski/ubuntu-helpers/blob/master/install-rails.sh)
 *Installs Ruby 2.3.0, Ruby on Rails 4.2.6, RVM and helpers: ruby debugging (ruby-debug-ide), basic unit testing (test-unit) and Visual Studio Code editor*
 
 - ruby (2.3.0)
