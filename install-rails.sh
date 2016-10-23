@@ -33,6 +33,9 @@ sudo apt-get -y install curl
 sudo curl --silent --location https://deb.nodesource.com/setup_6.x | sudo bash -
 sudo apt-get -y install nodejs
 
+# ZLib (required by Nokogiri)
+sudo apt-get install zlib1g-dev
+
 # Ruby On Rails
 sudo gem install rails -v 4.2.6
 
