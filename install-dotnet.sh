@@ -14,7 +14,7 @@ while getopts 'c' flag; do
 done
 
 # Git
-sudo apt-get install git
+sudo apt-get -y install git
 
 # .NET Core
 if [ "$version" = "$lts14" ]; then

@@ -11,13 +11,13 @@ while getopts 'c' flag; do
 done
 
 # Git
-sudo apt-get install git
+sudo apt-get -y install git
 
 # Ruby
-sudo apt-get install ruby
+sudo apt-get -y install ruby
 
 # Ruby for developers
-sudo apt-get install ruby-dev
+sudo apt-get -y install ruby-dev
 
 # Ruby bundler
 sudo gem install bundler
