@@ -3,6 +3,18 @@
 version=$(lsb_release --release | cut -f2)
 lts14="14.04"
 lts16="16.04"
+code=false
+
+# Parse flags
+while getopts 'abcf:v' flag; do
+  case "${flag}" in
+    c) code=true ;;
+    *) error "Unexpected option ${flag}" ;;
+  esac
+done
+
+# Git
+sudo apt-get install git
 
 # .NET Core
 if [ "$version" = "$lts14" ]; then
@@ -26,6 +38,9 @@ sudo apt-get -y install nodejs
 sudo npm install -g yo
 sudo npm install -g generator-aspnet
 
-# VS Code
-wget -O ~/Downloads/vscode-amd64.deb "https://go.microsoft.com/fwlink/?LinkID=760868"
-sudo dpkg -i ~/Downloads/vscode-amd64.deb
+# VS Code (optional)
+if [ "$code" = true ] ; then
+then    
+    wget -O ~/Downloads/vscode-amd64.deb "https://go.microsoft.com/fwlink/?LinkID=760868"
+    sudo dpkg -i ~/Downloads/vscode-amd64.deb
+fi
