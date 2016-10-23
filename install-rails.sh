@@ -20,14 +20,7 @@ sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev l
 sudo gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 
 # RVM for managing Ruby -v
-curl -sSL https://get.rvm.io | bash -s stable --ruby
-
-# Register loading RVM in bash shell
-echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
-source ~/.bashrc 
-
-# Get stable RVM
-rvm get stable
+curl -sSL https://get.rvm.io | bash -s stable
 
 # Ruby 2.0.0
 /bin/bash --login
