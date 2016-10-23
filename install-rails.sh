@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 code=false
 
@@ -30,13 +30,7 @@ sudo gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A17031138
 curl -sSL https://get.rvm.io | bash -s stable
 
 # Source RVM in this script
-if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then
-  source "$HOME/.rvm/scripts/rvm"
-elif [[ -s "/usr/local/rvm/scripts/rvm" ]] ; then
-  source "/usr/local/rvm/scripts/rvm"
-else
-  printf "ERROR: An RVM installation was not found.\n"
-fi
+source "/usr/local/rvm/scripts/rvm"
 
 # Point to RVM for single-user shell
 echo '[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"' >> ~/.bash_profile
@@ -44,9 +38,9 @@ echo '[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"' >
 # Point to RVM for non-login shell
 echo "source /usr/local/rvm/scripts/rvm" >> ~/.bashrc
 
-# Ruby 2.1.0
-rvm install 2.1.0
-rvm use 2.1.0
+# Ruby 2.3.0
+rvm install 2.3.0
+rvm use 2.3.0
 rvm rubygems latest
 ruby --version
 
