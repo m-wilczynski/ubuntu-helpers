@@ -13,6 +13,13 @@ while getopts 'c' flag; do
   esac
 done
 
+# Update OS
+sudo apt-get -y update
+
+# Curl install/update
+sudo apt-get -y install curl
+sudo apt-get -y install libcurl3
+
 # Git
 sudo apt-get -y install git
 
@@ -39,8 +46,7 @@ sudo npm install -g yo
 sudo npm install -g generator-aspnet
 
 # VS Code (optional)
-if [ "$code" = true ] ; then
-then    
+if [ "$code" = true ] ; then    
     wget -O ~/Downloads/vscode-amd64.deb "https://go.microsoft.com/fwlink/?LinkID=760868"
     sudo dpkg -i ~/Downloads/vscode-amd64.deb
 fi

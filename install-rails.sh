@@ -10,6 +10,13 @@ while getopts 'c' flag; do
   esac
 done
 
+# Update OS
+sudo apt-get -y update
+
+# Curl install/update
+sudo apt-get -y install curl
+sudo apt-get -y install libcurl3
+
 # Git
 sudo apt-get -y install git
 
@@ -24,31 +31,29 @@ curl -sSL https://get.rvm.io | bash -s stable
 
 # Ruby 2.0.0
 /bin/bash --login
-rvm install 2.0.0
-rvm use 2.0.0
+rvm install 2.1.0
+rvm use 2.1.0
 rvm rubygems latest
 ruby --version
 
 # Ruby bundler
-sudo gem install bundler
+gem install bundler
 
 # Ruby debugging
-sudo gem install ruby-debug-ide --platform=ruby --pre
+gem install ruby-debug-ide --platform=ruby --pre
 
 # Ruby test-unit
-sudo gem install test-unit-full
+gem install test-unit-full
 
 # Node.js and npm
-sudo apt-get -y install curl
 sudo curl --silent --location https://deb.nodesource.com/setup_6.x | sudo bash -
 sudo apt-get -y install nodejs
 
 # Ruby On Rails
-sudo gem install rails -v 4.2.6
+gem install rails
 
 # VS Code (optional)
-if [ "$code" = true ] ; then
-then    
+if [ "$code" = true ] ; then   
     wget -O ~/Downloads/vscode-amd64.deb "https://go.microsoft.com/fwlink/?LinkID=760868"
     sudo dpkg -i ~/Downloads/vscode-amd64.deb
 fi
