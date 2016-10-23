@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 version=$(lsb_release --release | cut -f2)
 lts14="14.04"
