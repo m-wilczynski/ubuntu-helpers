@@ -32,6 +32,9 @@ curl -sSL https://get.rvm.io | bash -s stable
 # RVM for single-user shell
 echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"' >> ~/.bash_profile
 
+# RVM for non-login shell
+echo "source $HOME/.rvm/scripts/rvm" >> ~/.bashrc
+
 # Ruby 2.0.0
 rvm install 2.1.0
 rvm use 2.1.0
