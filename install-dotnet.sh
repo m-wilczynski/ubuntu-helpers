@@ -40,7 +40,6 @@ sudo apt-get -y update
 sudo apt-get -y install dotnet-dev-1.0.0-preview2-003121
 
 # Node.js and npm
-sudo apt-get -y install curl
 sudo curl --silent --location https://deb.nodesource.com/setup_6.x | sudo bash -
 sudo apt-get -y install nodejs
 
