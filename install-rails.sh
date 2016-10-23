@@ -13,11 +13,19 @@ done
 # Git
 sudo apt-get -y install git
 
-# Ruby
-sudo apt-get -y install ruby
+# ZLib and other essentials
+sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev
 
-# Ruby for developers
-sudo apt-get -y install ruby-dev
+# RVM for managing Ruby -v
+curl -sSL https://get.rvm.io | bash -s stable --ruby
+rvm get stable
+
+# Ruby 2.0.0
+/bin/bash --login
+rvm install 2.0.0
+rvm use 2.0.0
+rvm rubygems latest
+ruby --version
 
 # Ruby bundler
 sudo gem install bundler
@@ -32,9 +40,6 @@ sudo gem install test-unit-full
 sudo apt-get -y install curl
 sudo curl --silent --location https://deb.nodesource.com/setup_6.x | sudo bash -
 sudo apt-get -y install nodejs
-
-# ZLib (required by Nokogiri)
-sudo apt-get install zlib1g-dev
 
 # Ruby On Rails
 sudo gem install rails -v 4.2.6
