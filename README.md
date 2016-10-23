@@ -5,12 +5,12 @@ Helper scripts for dev environment on Ubuntu 14.04 and 16.04 LTS.
 
 Simple installation (example for *install-dotnet.sh*):
 ```
-sudo sh install-dotnet.sh
+sudo bash install-dotnet.sh
 ```
 
 Include VS Code IDE in installation (example for *install-dotnet.sh*):
 ```
-sudo sh install-dotnet.sh -c
+sudo bash install-dotnet.sh -c
 ```
 
 ## Currently available:
