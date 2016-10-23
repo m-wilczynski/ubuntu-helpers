@@ -3,7 +3,7 @@
 code=false
 
 # Parse flags
-while getopts 'abcf:v' flag; do
+while getopts 'c' flag; do
   case "${flag}" in
     c) code=true ;;
     *) error "Unexpected option ${flag}" ;;
