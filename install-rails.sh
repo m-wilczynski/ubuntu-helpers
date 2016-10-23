@@ -30,12 +30,12 @@ sudo gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A17031138
 curl -sSL https://get.rvm.io | bash -s stable
 
 # RVM for single-user shell
-echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"' >> ~/.bash_profile
+echo '[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"' >> ~/.bash_profile
 
 # RVM for non-login shell
-echo "source $HOME/.rvm/scripts/rvm" >> ~/.bashrc
+echo "source /usr/local/rvm/scripts/rvm" >> ~/.bashrc
 
-# Ruby 2.0.0
+# Ruby 2.1.0
 rvm install 2.1.0
 rvm use 2.1.0
 rvm rubygems latest
